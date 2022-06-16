@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel='stylesheet' id='dokan-fontawesome-css'  href='https://themes.getbootstrap.com/wp-content/plugins/dokan-lite/assets/vendors/font-awesome/font-awesome.min.css?ver=2.9.27' type='text/css' media='all' />
+    <script type="text/javascript">
+        function ValidateTextBox() {
+            if (document.getElementById("recipient-name").value.trim() == "") {
+                alert("Please enter the fields");
+                return false;
+            }
+            else alert("Thank you");
+        };
+    </script>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg pb-4 bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand brndlogo" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="home.html">Home</a>
+                             <!-- id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Post
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Lifestyle
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="dash.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex subscribebtnsd">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Subscribe</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Subscribe</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="mb-3">
+                                      <label for="recipient-name" class="col-form-label">Email:</label>
+                                      <input type="email" class="form-control" id="recipient-name" placeholder="enter your email">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="message-text" class="col-form-label">Any message:</label>
+                                      <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="modal-footer" >
+                                
+                                  <button type="Submit" id="btnCheck" name="Submit" class="btn btn-secondary" data-bs-dismiss="modal" value="Check Empty" onclick="return ValidateTextBox();">Submit</button>
+                               
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <a class="link-secondary" href="#" aria-label="Search">
+                
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                                viewBox="0 0 24 24">
+                                <title>Search</title>
+                                <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                                <path d="M21 21l-5.2-5.2"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="conatiner">
+            <div class="row">
+                <div class="col-lg-3 col">
+                <nav id="navbar-example3" class="navbar bg-light flex-column align-items-stretch p-3">
+        
+                    <nav class="nav nav-pills flex-column">
+                      <a class="nav-link" href="#item-1">Item 1</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                      </nav>
+                      <a class="nav-link" href="#item-2">Item 2</a>
+                      <a class="nav-link" href="#item-3">Item 3</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                      </nav>
+                    </nav>
+                  </nav></div>
+                  <div class="col-lg-9 col">
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" tabindex="0">
+                    <div id="item-1">
+                      <h4>Item 1</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nostrum ipsum est explicabo, vitae quibusdam numquam perspiciatis rem eius facere, tempore fugiat voluptatibus voluptates illum praesentium exercitationem dolorum veniam. Recusandae?
+                      Hic voluptatibus id, rerum molestiae repudiandae quod sint sed facere facilis perferendis! Facere, consequatur obcaecati! Deleniti maiores unde mollitia accusamus facere! Quia inventore, fuga earum vitae voluptatem ad illum laborum!
+                      Atque corrupti expedita suscipit odio ad dolorem error est pariatur eos magnam veniam odit placeat, possimus ex ipsam omnis nesciunt exercitationem tenetur deleniti blanditiis culpa. Assumenda odio possimus magnam velit.
+                      Totam sequi cupiditate sed fugit est deserunt, dolorum iste exercitationem earum, id fuga aliquid ab quaerat. Mollitia, vero cupiditate. Nam rem veniam repellat alias et adipisci incidunt quo corporis aperiam!
+                      Adipisci, blanditiis voluptas modi deleniti doloribus amet sunt dolorum, saepe, velit recusandae similique autem vitae optio? Mollitia beatae sed error, iure aut, alias eaque laudantium repellendus, accusantium ab est ea.
+                      Dolore, magnam architecto. Numquam voluptatibus iste dolorum voluptates delectus possimus excepturi recusandae temporibus. Minus sint tenetur ducimus laudantium autem. Necessitatibus autem expedita minima nesciunt ad, provident impedit fugiat ea quam.</p>
+                    </div>
+                    <div id="item-1-1">
+                      <h5>Item 1-1</h5>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis quo, a magni molestiae quae reprehenderit voluptate veniam voluptatem totam. Blanditiis quas vero asperiores sequi quia similique libero distinctio voluptas consequuntur.
+                      Dolores consequuntur dolorem et accusantium, voluptates, odio ullam necessitatibus repudiandae officia veniam in delectus voluptatum, mollitia commodi. Totam distinctio dignissimos quo necessitatibus adipisci reiciendis voluptatem, minima ipsum fuga accusantium vitae.
+                      Delectus vitae nulla officia consequatur totam laboriosam cumque similique enim, pariatur necessitatibus, deleniti voluptatem accusantium natus nostrum aliquam molestiae numquam a sint, fuga magni beatae voluptas? Facere soluta omnis doloribus.
+                      Deleniti, aut odit tenetur quo recusandae, iure eveniet tempore ipsa minima obcaecati quas. Aspernatur omnis sit officia, hic beatae ipsum fugit illum delectus. Commodi praesentium voluptates temporibus molestias amet quidem.</p>
+                    </div>
+                    <div id="item-1-2">
+                      <h5>Item 1-2</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, quod deserunt magni illo provident atque labore exercitationem minima modi, reprehenderit vitae natus, ullam illum ab animi adipisci! Fugit, esse amet.
+                      Tempora voluptatum impedit, quis quam possimus mollitia, maiores amet, dolor ex error repellat. Aliquid magnam eius odio sit soluta assumenda nostrum dolore, et deleniti officia cumque laudantium perferendis! Nam, nobis?
+                      Quidem illo incidunt, magni deserunt quibusdam nulla id harum laboriosam commodi ipsam possimus fuga tempore autem dolores dignissimos maxime facere quas nam magnam, a iusto! Quo mollitia labore nisi est?
+                      Magni perspiciatis in maiores harum ex ratione eius nulla molestiae optio unde. Vitae porro quibusdam harum suscipit aut. Libero quia asperiores quis quas delectus facilis qui ullam? Praesentium, minus eveniet!
+                      Quaerat sequi expedita sit cumque, reprehenderit enim commodi quas distinctio at, ad itaque perspiciatis quisquam maxime nemo perferendis excepturi corporis quidem modi tempora pariatur consectetur. Id dignissimos consectetur soluta nobis?</p>
+                    </div>
+                    <div id="item-2">
+                      <h4>Item 2</h4>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eligendi rem suscipit temporibus aliquid officiis placeat nobis commodi in ipsa, ullam consectetur debitis maiores quibusdam dolorum voluptate quasi veniam aspernatur!
+                      Vel, autem vero quam laborum quo quae nemo similique consequatur! Eius, quis quisquam quo voluptatem cumque possimus sunt nulla quibusdam quasi reprehenderit fugiat ea pariatur placeat cupiditate, sint, recusandae eveniet!
+                      Doloremque dolorem totam praesentium a nisi qui voluptas, blanditiis ea modi libero numquam? Tempore obcaecati ullam dolore. Magnam illo cumque numquam quaerat, deleniti, deserunt distinctio iste sit repellat maxime labore.
+                      Voluptatum totam modi illum blanditiis culpa sapiente, sint quibusdam voluptates voluptas facere delectus, ex natus laudantium molestias officiis at, esse ab alias labore exercitationem quis? Tempora ea molestias quisquam ab!
+                      Autem, ut impedit asperiores saepe beatae repellendus ad quam incidunt laboriosam dolores eos deserunt? Odio, fuga deserunt quos vitae id laborum reprehenderit quisquam ducimus sapiente placeat, minus ad sint architecto!
+                      Facilis ratione, in odio eligendi alias odit, iste nihil dolor culpa amet officiis commodi nisi accusantium consequatur? Doloremque officiis animi consectetur quam porro eligendi ea blanditiis earum tenetur, vero commodi!
+                      Ratione quas, magnam incidunt, accusantium vero rem corrupti aspernatur eligendi reiciendis dolor numquam ut accusamus vel mollitia, necessitatibus tempora illum tenetur aperiam cum. Architecto rerum quisquam rem molestiae dolore doloribus.</p>
+                    </div>
+                    <div id="item-3">
+                      <h4>Item 3</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio nulla nemo sunt consequatur dolorum? Nulla aperiam accusantium, ut veritatis velit iste nihil quo! Aliquid, et. Hic ut dolor temporibus?
+                      Beatae quae esse, cupiditate illo architecto nemo aspernatur quos, dolor enim maiores dolorum aut voluptatibus vero asperiores dicta reiciendis, quia ab ipsum! Sapiente natus ipsam voluptatum debitis, iste harum aliquam!
+                      Cumque minus magnam aspernatur incidunt, id explicabo voluptates quia cum perferendis rem itaque error hic tempore iure. Aliquid doloremque dolores obcaecati esse voluptates ea labore! Quod eaque aperiam magnam ea?</p>
+                    </div>
+                    <div id="item-3-1">
+                      <h5>Item 3-1</h5>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem repudiandae consequatur nemo, voluptate eum cum possimus? Magni corrupti perferendis praesentium totam reiciendis. Quisquam in quidem aliquid delectus tenetur aut temporibus!
+                      Velit enim ipsam cupiditate voluptatibus qui officia soluta inventore tempora ullam deleniti, dolores similique dicta sed dolore facilis, eius aspernatur aliquid molestias, eligendi praesentium. Accusantium ducimus cum assumenda dolor tempora!
+                      Illo minima possimus officiis minus commodi sed sint. Tempore minima eius quo dolore ex, veniam neque expedita unde fugiat. Neque asperiores obcaecati pariatur repudiandae aliquam veritatis recusandae doloremque totam repellendus!
+                      Et, consequatur? Est nam quia, sed, quas provident quis asperiores perferendis, sint quasi fugiat ab necessitatibus dolorum alias nemo reiciendis? Quisquam distinctio similique vero suscipit in ab aspernatur illum repudiandae?
+                      Praesentium necessitatibus neque, omnis nobis eligendi reiciendis! Minima corrupti id non asperiores repudiandae officia quia, vitae reiciendis iste iure magni quibusdam sed explicabo, temporibus sint? Maiores aliquam neque tempore totam.
+                      Nemo cupiditate sapiente, laborum nihil recusandae quae rerum delectus doloremque libero alias aut dolorem obcaecati laudantium nostrum commodi consectetur ratione tenetur facilis ipsa quos perferendis sunt cum reiciendis. Rem, dolorum.</p>
+                    </div>
+                    <div id="item-3-2">
+                      <h5>Item 3-2</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quia cumque, quos non in laborum tempore deleniti eos sequi ab iure blanditiis, porro placeat, maxime vero est adipisci nesciunt? Tenetur!
+                      Neque asperiores hic aut saepe iste atque qui. Cumque corporis, vel perferendis ipsa maxime nisi autem? Fuga facilis deleniti quas sunt modi velit iste. Aliquid quis cupiditate corrupti veritatis culpa.
+                      Nam inventore fugit illum labore unde deserunt quibusdam, consequuntur minima sint iusto reiciendis exercitationem aliquid praesentium debitis necessitatibus voluptates, voluptatum commodi incidunt eaque quaerat, quos provident porro beatae. Voluptatem, reiciendis?
+                      Doloribus non quam iure perspiciatis dolore, eum aliquid, a molestias corrupti fugit ex rerum. Rerum voluptas natus blanditiis excepturi ea minima voluptatem aperiam. Doloribus, enim quod excepturi natus mollitia et.
+
+                      </p>
+                    </div>
+                  </div></div>
+            </div>
+        </div>
+        <div class="footbackg">
+            <div class="container footdesign">
+                <div class="row my-4 stylrw" style="padding-top:20px;">
+        
+                    <div class="col-4 coltextf">
+                        <span>
+                            <p style="float: right;">Enter your mail</p>
+                        </span>
+                    </div>
+                    <div class="col-4 colem">
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="col-4 colsb">
+                        <span>
+                            <input class="btn btn-primary" type="submit" value="Subscribe">
+                        </span>
+                    </div>
+                </div>
+                <HR>
+                    
+                <footer>
+                    <div class="row justify-content-center">
+        
+                        <div class="col-12 col-md-3 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <span class="w-100 ftbg mt-auto">
+                                    <a href="#" class="badge bg-success mb-2"><i class="fa fa-circle mgrt" aria-hidden="true"></i>Sports</a>
+                                </span> 
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                <span class="w-100 ftbg mt-auto">
+                                    <a href="#" class="badge bg-primary mb-2"><i class="fa fa-circle mgrt" aria-hidden="true"></i>Sports</a>
+                                </span> 
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-6 col-md-3 mb-3">
+                            <h5>Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                        </div>
+        
+        
+                    </div>
+        
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                        <p>© 2022 Company, Inc. All rights reserved.</p>
+        
+                        <ul
+                            class="list-unstyled d-flex nav text-primary-hover text-center text-sm-end justify-content-center justify-content-center mt-3 mt-md-0">
+                            <li class="nav-item"><a class="dropdown-toggle text-primary-hover" href="#" role="button"
+                                    id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+                                    English Edition
+                                </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+                            <li class="nav-item"><a class="nav-link pe-0" href="#">Cookies</a></li>
+        
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    </html>
